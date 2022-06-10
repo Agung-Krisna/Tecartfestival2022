@@ -8,6 +8,7 @@ void init()
 }
 
 int main(){
+    init();
     char buffer[32];
     printf("Sebelum tidur, aku minta inputanmu dong: ");
     gets(buffer);
