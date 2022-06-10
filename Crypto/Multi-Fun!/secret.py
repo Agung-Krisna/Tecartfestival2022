@@ -1,0 +1,1 @@
+FLAG = "tecartfestival22{mu1+ibytes_equ@1_mul+ifun}"
