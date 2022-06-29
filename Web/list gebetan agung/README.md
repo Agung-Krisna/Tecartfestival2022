@@ -1,1 +1,1 @@
-flag : tecartfestival22{database_jsonn_itu_tidak_aman_yha_adick_adick}
+flag : tecartfestival22{jangan_simpen_database_di_static_file_yha}
