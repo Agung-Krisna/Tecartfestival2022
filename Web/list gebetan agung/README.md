@@ -1,0 +1,1 @@
+flag : tecartfestival22{database_jsonn_itu_tidak_aman_yha_adick_adick}
