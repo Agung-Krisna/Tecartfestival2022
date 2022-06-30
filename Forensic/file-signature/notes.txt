@@ -1,2 +1,2 @@
-FF D8 FF E0 	ÿØÿà 	0 	jpg 
-depannya tak hapus
+ini huruf belakangnya ilang 2. n1
+jadi brute 2 lagi
