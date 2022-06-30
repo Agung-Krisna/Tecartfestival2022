@@ -1,0 +1,1 @@
+FLAG = "tecartfestival22{reu5in9_k3y_i5_b@d}"
