@@ -5,4 +5,4 @@ services:
     container_name: formatstring
     restart: always
     ports:
-      - '2222:2222'
+      - '4500:4500'
