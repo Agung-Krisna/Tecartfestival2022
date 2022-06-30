@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  sort:
+    build: .
+    container_name: formatstring
+    restart: always
+    ports:
+      - '2222:2222'

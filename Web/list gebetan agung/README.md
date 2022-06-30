@@ -1,0 +1,1 @@
+flag : tecartfestival22{jangan_simpen_database_di_static_file_yha}

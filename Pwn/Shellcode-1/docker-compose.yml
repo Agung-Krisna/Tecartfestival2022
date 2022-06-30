@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  sort:
+    build: .
+    container_name: shellcode
+    restart: always
+    ports:
+      - '4444:4444'

@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  sort:
+    build: .
+    container_name: ret2win
+    restart: always
+    ports:
+      - '1111:1111'

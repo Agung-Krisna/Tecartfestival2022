@@ -1,0 +1,1 @@
+FLAG = "tecartfestival22{diba1ik_aja_kan}"
