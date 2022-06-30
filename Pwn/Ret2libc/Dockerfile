@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
-# Open port 3333
-EXPOSE 3333
+# Open port 6969
+EXPOSE 6969
 
 # update
 RUN apt-get update -y
@@ -26,4 +26,4 @@ RUN chmod 700 /usr/bin/* /bin/* /tmp /dev/shm
 RUN chmod 755 /bin/dash /bin/sh /bin/cat /usr/bin/id /bin/ls
 
 # Run Program
-CMD socat TCP-LISTEN:3333,reuseaddr,fork EXEC:./chall
+CMD socat TCP-LISTEN:6969,reuseaddr,fork EXEC:./chall

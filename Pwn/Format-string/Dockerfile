@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
-# Open port 2222
-EXPOSE 2222
+# Open port 1088
+EXPOSE 1088
 
 # update
 RUN apt-get update -y
@@ -26,4 +26,4 @@ RUN chmod 700 /usr/bin/* /bin/* /tmp /dev/shm
 RUN chmod 755 /bin/dash /bin/sh /bin/cat /usr/bin/id /bin/ls
 
 # Run Program
-CMD socat TCP-LISTEN:2222,reuseaddr,fork EXEC:./chall
+CMD socat TCP-LISTEN:1088,reuseaddr,fork EXEC:./chall

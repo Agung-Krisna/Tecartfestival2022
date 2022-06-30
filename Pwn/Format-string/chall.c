@@ -2,7 +2,15 @@
 
 int nilai = 0;
 
+void init()
+{
+    setvbuf(stdin, NULL, _IONBF, 0);
+    setvbuf(stdout, NULL, _IONBF, 0);
+    setvbuf(stderr, NULL, _IONBF, 0);
+}
+
 int main() {
+    init();
     char password[100];
 
     puts("Input nilaimu: ");

@@ -5,4 +5,4 @@ services:
     container_name: ret2libc
     restart: always
     ports:
-      - '2222:2222'
+      - '6969:6969'
