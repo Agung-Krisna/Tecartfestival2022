@@ -1,0 +1,1 @@
+flag : tecartfestival22{password_ini_sangat_amat_panjangg}

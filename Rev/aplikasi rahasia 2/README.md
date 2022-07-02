@@ -1,0 +1,1 @@
+flag : tecartfestival22{n0t_s00_h4rd_f0r_X0R_r1ght?}

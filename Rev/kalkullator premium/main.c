@@ -11,6 +11,7 @@ int main(int argc, char const *argv[])
     gets(s);
     if (strcmp(s, "FEST-UYDH-EKFJ-2022") == 0)
     {
+        printf("Kalkulator premium (tapi boonk) :D");
         system("echo \"Mantapp ini gan flagnya\"; cat flag.txt");
     }
     else

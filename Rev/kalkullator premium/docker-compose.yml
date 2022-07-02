@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  sort:
+    build: .
+    container_name: kalkulator
+    restart: always
+    ports:
+      - '6006:6006'
