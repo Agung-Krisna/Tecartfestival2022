@@ -1,20 +1,24 @@
-#include <sys/mman.h>
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
+#include <sys/mman.h>
 #include <unistd.h>
+#include <stdlib.h>
+#include <seccomp.h>
 
-char* createExecutableMemoryRegion(){
-    char a = mmap(NULL, 0x1000, PROT_READ | PROT_WRITE | PROT_EXEC, MAP_PRIVATE | MAP_ANONYMOUS, 0, 0);
-    if(a == MAP_FAILED) {
-        puts("MMAP failed");
-        exit(-1);
-    }
-    return a;
+void initialization()
+{
+	setvbuf(stdin,0,2,0);
+	setvbuf(stdout,0,2,0);
+	setvbuf(stderr,0,2,0);
 }
 
-int main() {
-    void (func_ptr)();
-    func_ptr = createExecutableMemoryRegion();
-    read(0, func_ptr, 0x1000);
-    func_ptr();
+void main()
+{
+	initialization();
+	char *rwx = mmap(0,0x1000,PROT_READ|PROT_WRITE|PROT_EXEC,MAP_PRIVATE|MAP_ANONYMOUS,-1,0);
+	
+	write(1,"Shellcode > ",12);
+	read(0,rwx, 0x64);
+	((void(*)(void))rwx)();
+	exit(0);
 }
